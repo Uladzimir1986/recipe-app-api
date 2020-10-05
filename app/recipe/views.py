@@ -74,7 +74,7 @@ class RecipeViewSet(viewsets.ModelViewSet):
             serializer.save()
             return Response(
                 serializer.data,
-                status = status.HTTP_200_OK
+                status=status.HTTP_200_OK
             )
 
         return Response(
